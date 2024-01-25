@@ -3,73 +3,57 @@
     <head>
         <title>Test Page: Don't Panic</title>
         <meta charset="utf-8">
-        <style>
-            /* GLOBAL SYTLES */
-            a {
-                color: #f00;
-            }
-            html, body {
-                margin: 0;
-                padding: 0;
-            }
-            h1 {
-                font-size: 7vw;
-                margin-top: 0;
-            }
-            /* HERO STYLES */
-            .full-hero {
-                background-color: #c7dbcf;
-                height: 50vh;
-            }
-
-            /* SOCIAL STYLES */
-            .social-link {
-                background: rgba(150, 150, 150, 0.5);
-                color: blue;
-            }
-
-            /* BIO STYLES */
-            .bio-wrapper {
-                font-size: 24px;
-            }
-            .bio-box {
-                border: 1px solid black;
-                font-size: 1rem;
-                width: 50%;
-            }
-            .bio-copy {
-                font-size: 1em;
-            }
-            .bio-copy a {
-                color: green;
-            }
-        </style>
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
+        <header class="header">
+            <nav>
+                <ul class="header-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Nav 1</a></li>
+                    <li><a href="#">Nav 2</a></li>
+                    <li><a href="#">Nav 3</a></li>
+                </ul>    
+            </nav>
+            <a href="/" class="header-logo">Logo</a>
+        </header>
         <div class="full-hero hero-home">
             <h1>I'm an h1</h1>
-            <ul>
+            <ul class="social-list">
                 <li>
-                    <a href="https://example.com" class="social-link">Link</a>
+                    <a href="https://example.com" class="social-link">Fb</a>
                 </li>
                 <li>
-                    <a href="https://example.com" class="social-link">Link</a>
+                    <a href="https://example.com" class="social-link">Tw</a>
                 </li>
                 <li>
-                    <a href="https://example.com" class="social-link">Link</a>
+                    <a href="https://example.com" class="social-link">Gh</a>
                 </li>
             </ul>
         </div>
         <h2>I'm an h2</h2>
+        <div class="test-box">
+            200px wide
+        </div>
+        <div class="test-box test-box-nosizing">
+            200px wide + border + padding = 290px
+        </div>
+        <div class="test-box test-box-nosizing test-box-sizing">
+            200px wide + border + padding + box-sizing: border-box = 200px
+        </div>
         <div class="bio-wrapper">
             <div class="bio-box">
+                <img src="https://placekitten.com/g/400/400">
                 <h3>Shade Loving Tropes</h3>
-                <a href="https://libbyapp.com">Libby</a>
+                <a href="https://libbyapp.com" class="social-link">Libby</a>
                 <div class="bio-copy">
                     <p>
                         I spend <em>way too much time</em> reading or listening to 
-                        books by such authors as <a href="https://louisepenny.com" class="social-link">Louise Penny</a>
-                        and the duo <a href="prestonandchild.com" class="social-link">Preston & Child</a>.
+                        books by such authors as <a href="https://louisepenny.com">Louise Penny</a>
+                        and the duo <a href="prestonandchild.com">Preston & Child</a>.
+                    </p>
+                    <p>
+                        Here's another paragraph.
                     </p>
                 </div>
             </div>
@@ -95,5 +79,13 @@
                 </p>
             </div>
         </div>
+        <p>
+            This should wrap weirdly.
+        </p>
+        <p style="clear: left;">
+            This should not.
+        </p>
+        <h3>Background</h3>
+        <p>Here's another paragraph, this time with some <strong>STRONG</strong> text.</p>
     </body>
 </html>
