@@ -5,12 +5,13 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/main.css">
     </head>
+
     <body>
         <header class="header">
             <nav>
                 <ul class="header-nav">
                     <li><a href="/">Home</a></li>
-                    <li><a href="#">Nav 1</a></li>
+                    <li><a href="/gallery">Gallery</a></li>
                     <li><a href="#">Nav 2</a></li>
                     <li><a href="#">Nav 3</a></li>
                 </ul>    
@@ -19,81 +20,88 @@
                 <img src="Capybara-PNG-Picture.png" alt="Capybara">
             </a>
         </header>
-        <div class="full-hero hero-home">
-            <h1>I'm an h1</h1>
-            <ul class="social-list">
-                <li>
-                    <a href="https://example.com" class="social-link">Fb</a>
-                </li>
-                <li>
-                    <a href="https://example.com" class="social-link">Tw</a>
-                </li>
-                <li>
-                    <a href="https://example.com" class="social-link">Gh</a>
-                </li>
-            </ul>
-        </div>
-        <h2>This section</h2>
-        <p>
-            I am trying to do way to many things at once to even think about what I might put here. 
-            The directions say to make this about Learn Enough founders.
-        </p>
-        <p>And since they have a second paragraph, so too do I. For now.</p>
-        <div class="test-box">
-            200px wide
-        </div>
-        <div class="test-box test-box-nosizing">
-            200px wide + border + padding = 290px
-        </div>
-        <div class="test-box test-box-nosizing test-box-sizing">
-            200px wide + border + padding + box-sizing: border-box = 200px
-        </div>
-        <div class="bio-wrapper">
-            <div class="bio-box">
-                <img src="https://placekitten.com/g/400/400">
-                <h3>Shade Loving Tropes</h3>
-                <a href="https://libbyapp.com" class="social-link">Libby</a>
-                <div class="bio-copy">
+        <div class="home">
+            <div class="full-hero hero-home">
+                <div class="hero-content">
+                    <h1>Don't worry, be Capy!</h1>
+                    <ul class="social-list">
+                        <li>
+                            <a href="https://example.com" class="social-link">Fb</a>
+                        </li>
+                        <li>
+                            <a href="https://example.com" class="social-link">Tw</a>
+                        </li>
+                        <li>
+                            <a href="https://example.com" class="social-link">Gh</a>
+                        </li>
+                    </ul>    
+                </div>
+            </div>
+
+            <div class="content-container">
+                <div class="home-callout">
+                    <h1 class="callout-title">Happy Tale</h1>
+                    <div class="callout-copy">
+                        <p>
+                            Here is where I would say something truly <em>wonderful</em> about myself.
+                        </p>
+                        <p>
+                            Someday I hope to redesign all of this, probably combining the HTML/CSS I'm learning
+                            with django and maybe add-in some PostgreSQL. <strong>Won't that be fun?</strong>
+                        </p>
+                        <h3>Background</h3>
+                        <p>I'm just trying to learn some new skills is all.</p>
+                    </div>
+                </div>
+
+                <div class="home-section">
+                    <h2>The author</h2>
                     <p>
-                        I spend <em>way too much time</em> reading or listening to 
-                        books by such authors as <a href="https://louisepenny.com">Louise Penny</a>
-                        and the duo <a href="prestonandchild.com">Preston & Child</a>.
-                    </p>
-                    <p>
-                        Here's another paragraph.
+                        Shade Loving Tropes has been in IT for over 30 years in one role or another.
                     </p>
                 </div>
             </div>
-            <div class="bio-box">
-                <h3>Armand Gamache</h3>
-                <p>
-                    Armand Gamache is a the main character of Louise Penny's books. Somehow 
-                    when I read his stories it <em>makes me want to be a better person.</em>
-                </p>
-            </div>
-            <div class="bio-box">
-                <h3>A. X. L. Pendergast</h3>
-                <p>
-                    Preston & Child have at least three different series of books, depending on how
-                    lump them together. The Pendergast books are easily the most popular.
-                </p>
-            </div>
-            <div class="bio-box">
-                <h3>James S. A. Corey</h3>
-                <p>
-                    I'm new to the work of the authors calling themselves James S. A. Corey,
-                    but I've been plowing through their Expanse series.
-                </p>
+            
+            <div class="bio-wrapper">
+                <div class="bio-box">
+                    <img src="https://placekitten.com/g/400/400">
+                    <h3>Shade Loving Tropes</h3>
+                    <a href="https://libbyapp.com" class="social-link">Libby</a>
+                    <div class="bio-copy">
+                        <p>
+                            I spend <em>way too much time</em> reading or listening to 
+                            books by such authors as <a href="https://louisepenny.com">Louise Penny</a>
+                            and the duo <a href="prestonandchild.com">Preston & Child</a>.
+                        </p>
+                        <p>
+                            Here's another paragraph.
+                        </p>
+                    </div>
+                </div>
+                <div class="bio-box">
+                    <h3>Armand Gamache</h3>
+                    <p>
+                        Armand Gamache is a the main character of Louise Penny's books. Somehow 
+                        when I read his stories it <em>makes me want to be a better person.</em>
+                    </p>
+                </div>
+                <div class="bio-box">
+                    <h3>A. X. L. Pendergast</h3>
+                    <p>
+                        Preston & Child have at least three different series of books, depending on how
+                        lump them together. The Pendergast books are easily the most popular.
+                    </p>
+                </div>
+                <div class="bio-box">
+                    <h3>James S. A. Corey</h3>
+                    <p>
+                        I'm new to the work of the authors calling themselves James S. A. Corey,
+                        but I've been plowing through their Expanse series.
+                    </p>
+                </div>
             </div>
         </div>
-        <p>
-            This should wrap weirdly.
-        </p>
-        <p style="clear: left;">
-            This should not.
-        </p>
-        <h3>Background</h3>
-        <p>Here's another paragraph, this time with some <strong>STRONG</strong> text.</p>
+
         <footer class="footer">
             <a class="footer-logo" href="/">
                 <img src="Capybara-PNG-Picture.png" alt="Capybara"/>
